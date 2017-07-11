@@ -1,0 +1,117 @@
+.btn {
+  position: relative;
+  overflow: hidden;
+  @include inline-flex();
+  @include flex-direction();
+  @include justify-content(center);
+  @include align-items(center);
+  border: none;
+  height: 60px;
+  padding: 0 26px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 18px;
+  @include open-sans();
+  font-weight: 400;
+  border-radius: 5px;
+  background: rgb(255,84,84);
+  background: -moz-linear-gradient(left,  rgba(255,84,84,1) 0%, rgba(234,67,67,1) 100%);
+  background: -webkit-linear-gradient(left,  rgba(255,84,84,1) 0%,rgba(234,67,67,1) 100%);
+  background: linear-gradient(to right,  rgba(255,84,84,1) 0%,rgba(234,67,67,1) 100%);
+  backface-visibility: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  box-shadow: 0 20px 40px 0 rgba(234, 67, 67, 0.25);
+  transition: background 0.3s ease-in-out;
+
+  &:before {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #df4141;
+    content: '';
+    border-radius: 5px;
+    backface-visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+  }
+  &:after {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    backface-visibility: hidden;
+    background: rgb(234,67,67);
+    background: -moz-linear-gradient(left,  rgba(234,67,67,1) 0%, rgba(255,84,84,1) 100%);
+    background: -webkit-linear-gradient(left,  rgba(234,67,67,1) 0%,rgba(255,84,84,1) 100%);
+    background: linear-gradient(to right,  rgba(234,67,67,1) 0%,rgba(255,84,84,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea4343', endColorstr='#ff5454',GradientType=1 );
+    content: '';
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  span {
+    position: relative;
+    z-index: 2;
+  }
+
+  &:hover {
+
+    &:after {
+      opacity: 1;
+    }
+
+  }
+
+  &:active {
+
+    &:before {
+      opacity: 1;
+    }
+    &:after {
+      opacity: 0;
+    }
+
+  }
+
+  &_2 {
+
+  }
+  &_diagnostic {
+    padding: 0 30px 0 26px;
+
+    span {
+      padding-left: 50px;
+
+      &:after {
+        @include absoluteCenterY();
+        left: 0;
+        width: 36px;
+        height: 36px;
+        background: url(data:image/svg+xml,%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20width%3D%2248px%22%20height%3D%2248px%22%20viewBox%3D%220%200%2048%2048%22%20enable-background%3D%22new%200%200%2048%2048%22%20xml%3Aspace%3D%22preserve%22%3E%0A%3Cg%3E%0A%09%3Crect%20x%3D%2241%22%20y%3D%227%22%20fill%3D%22%23fff%22%20width%3D%222%22%20height%3D%2234%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2237%22%20y%3D%227%22%20fill%3D%22%23fff%22%20width%3D%225%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2237%22%20y%3D%2239%22%20fill%3D%22%23fff%22%20width%3D%225%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2237%22%20y%3D%2223%22%20fill%3D%22%23fff%22%20width%3D%225%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2219%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2215%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2211%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2235%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2231%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%09%3Crect%20x%3D%2239%22%20y%3D%2227%22%20fill%3D%22%23fff%22%20width%3D%223%22%20height%3D%222%22%3E%3C/rect%3E%0A%3C/g%3E%0A%3Cpolyline%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20stroke-linejoin%3D%22bevel%22%20points%3D%226%2C27.999%208%2C17.999%2010%2C32.999%2013%2C12.999%0A%0915%2C42.999%2018%2C5%2020%2C29.999%2023%2C19.999%2026%2C38.999%2028%2C11.999%2031%2C31.999%2033%2C20.999%20%22%3E%3C/polyline%3E%0A%3C/svg%3E);
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .btn {
+    height: 60px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+}

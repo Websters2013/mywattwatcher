@@ -1,0 +1,87 @@
+.how-works {
+  position: relative;
+  padding: 380px 0 70px;
+
+  &__layout {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__content {
+
+    .graph {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      @include absoluteCenterX();
+    }
+
+    p {
+      margin: 0 0 34px
+    }
+    &-main {
+      margin: 0 0 45px !important;
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+  }
+  &__title {
+    margin: 0 0 25px;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
+  }
+  &__top-pic {
+    max-width: 770px;
+    margin: 0 auto 50px;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .how-works {
+    padding: 70px 0;
+
+    &__layout {
+      padding: 0 70px;
+    }
+    &__content {
+      position: relative;
+      padding-left: 51.5%;
+
+      .graph {
+        position: absolute;
+        top: -7px;
+        left: -40px;
+        transform: translateX(0);
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $desktop) {
+
+  .how-works {
+    padding: 35px 0 240px;
+
+    &__content {
+
+      .graph {
+        left: 24px;
+      }
+
+    }
+
+  }
+
+}

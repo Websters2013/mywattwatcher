@@ -1,0 +1,32 @@
+.logo {
+  position: absolute;
+  z-index: 1;
+  top: 9px;
+  left: 15px;
+  width: 231px;
+  height: 30px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .logo {
+    top: 55px;
+    left: 15px;
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+}

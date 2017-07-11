@@ -1,0 +1,260 @@
+.graph {
+  position: relative;
+  width: 280px;
+  height: 280px;
+  margin: 43px auto 53px;
+  border-radius: 100%;
+  border: 3px solid #fff;
+  box-shadow: 0 16px 60px 0 #f0f1f9, 0 30px 40px 0 rgba(240, 241, 249, 0.76) inset;
+
+  &__inner {
+    overflow: hidden;
+    @include absoluteCenter();
+    width: 235px;
+    height: 235px;
+    border-radius: 100%;
+    border: 6px solid #fff;
+    box-shadow: 0 16px 60px 0 #f6f7ff, 0 0 0 8px #fef5f6, 0 30px 40px 0 #feedee inset;
+
+    &:after {
+      position: absolute;
+      top: 110px;
+      left: 2px;
+      right: 2px;
+      height: 2px;
+      background: #ff5454;
+      content: '';
+    }
+
+  }
+  &__pts {
+    @include absoluteCenterX();
+    top: 30px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #ff5454;
+  }
+  &__lines {
+
+    >span {
+      position: absolute;
+      bottom: 0;
+      width: 12px;
+      background: #ffdddd;
+      border-radius: 3px;
+      height: 50%;
+
+      &:nth-child(1) {
+        left: 16px;
+      }
+      &:nth-child(2) {
+        left: 36px;
+      }
+      &:nth-child(3) {
+        left: 56px;
+      }
+      &:nth-child(4) {
+        left: 76px;
+      }
+      &:nth-child(5) {
+        right: 76px;
+      }
+      &:nth-child(6) {
+        right: 56px;
+      }
+      &:nth-child(7) {
+        right: 36px;
+      }
+      &:nth-child(8) {
+        right: 16px;
+      }
+
+    }
+    &-main {
+      @include absoluteCenterX();
+      z-index: 1;
+      bottom: 0;
+      width: 20px;
+      height: 68%;
+
+      &:before {
+        @include absoluteCenterX();
+        top: -8px;
+        width: 37px;
+        height: 37px;
+        border-radius: 100%;
+        background: #ffdddd;
+        content: '';
+      }
+      &:after {
+        @include absoluteCenterX();
+        z-index: 2;
+        top: 6px;
+        width: 8px;
+        height: 8px;
+        border-radius: 100%;
+        background: #fff;
+        content: '';
+      }
+
+      >span {
+        z-index: 0;
+        @include absoluteCenterX();
+        top: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 20px 20px 0 0;
+        background: #ff5454;
+        box-shadow: -6px 0 8px 0 rgba(244, 68, 76, 0.3);
+      }
+
+    }
+
+  }
+
+  &_critical {
+
+    .graph__inner {
+      box-shadow: 0 16px 60px 0 #f6f7ff, 0 0 0 8px #fffaf3, 0 30px 40px 0 #fff5e8 inset;
+
+      &:after {
+        background: #ff9a15;
+      }
+
+    }
+    .graph__pts {
+      color: #ff9a15;
+    }
+    .graph__lines {
+
+      >span {
+        background: #ffeace;
+      }
+      &-main {
+
+        &:before {
+          background: #ffeace;
+        }
+        >span {
+          background: #ff9a15;
+          box-shadow: -6px 0 8px 0 rgba(255, 236, 211, 0.5);
+        }
+
+      }
+    }
+
+  }
+  &_okay {
+
+    .graph__inner {
+      box-shadow: 0 16px 60px 0 #f6f7ff, 0 0 0 8px #f6f7ff, 0 30px 40px 0 #eef0ff inset;
+
+      &:after {
+        background: #8bc34a;
+      }
+
+    }
+    .graph__pts {
+      color: #8bc34a;
+    }
+    .graph__lines {
+
+      >span {
+        background: #e8f3db;
+      }
+      &-main {
+
+        &:before {
+          background: #e8f3db;
+        }
+        >span {
+          background: #8bc34a;
+          box-shadow: -6px 0 8px 0 rgba(255, 236, 211, 0.5);
+        }
+
+      }
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .graph {
+    width: 340px;
+    height: 340px;
+
+    &__inner {
+      width: 275px;
+      height: 275px;
+    }
+    &__pts {
+      top: 43px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+    &__lines {
+
+      >span {
+
+        &:nth-child(1) {
+          left: 32px;
+        }
+        &:nth-child(2) {
+          left: 54px;
+        }
+        &:nth-child(3) {
+          left: 76px;
+        }
+        &:nth-child(4) {
+          left: 98px;
+        }
+        &:nth-child(5) {
+          right: 98px;
+        }
+        &:nth-child(6) {
+          right: 76px;
+        }
+        &:nth-child(7) {
+          right: 54px;
+        }
+        &:nth-child(8) {
+          right: 32px;
+        }
+
+      }
+      &-main {
+        @include absoluteCenterX();
+        z-index: 1;
+        bottom: 0;
+        width: 20px;
+        height: 68%;
+
+        &:after {
+          @include absoluteCenterX();
+          z-index: 2;
+          top: 6px;
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background: #fff;
+          content: '';
+        }
+
+      }
+
+    }
+
+  }
+  
+}
+@media (min-width: $tablet-landscape) {
+
+  .graph {
+    width: 380px;
+    height: 380px;
+  }
+
+}

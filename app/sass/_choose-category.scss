@@ -1,0 +1,151 @@
+.choose-category {
+  padding-top: 130px;
+  text-align: center;
+
+  &__title {
+
+  }
+  &__layout {
+    position: relative;
+    max-width: 1230px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  &__content {
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content();
+    @include align-items();
+    @include flex-wrap(wrap);
+    padding-top: 40px;
+    padding-bottom: 78px;
+
+    >div {
+      width: 100%;
+      margin: 0 0 50px;
+
+      &:first-child {
+
+        .choose-category__item {
+
+          .choose-category__pic {
+
+            svg {
+              width: 50px;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+  &__item {
+    display: block;
+    font-size: 18px;
+    line-height: 20px;
+    color: #2a2635;
+    font-weight: 400;
+
+    &:hover {
+
+      .choose-category__pic {
+        background: #ffeeee;
+        box-shadow: 0 20px 40px 0 rgba(255, 84, 84, 0.35);
+
+        &:after {
+          opacity: 1;
+        }
+
+        .svg-hover {
+          fill: #fff;
+        }
+        .svg-hover-stroke {
+          stroke: #fff;
+        }
+
+      }
+
+    }
+
+  }
+  &__pic {
+    position: relative;
+    display: block;
+    width: 161px;
+    height: 161px;
+    margin: 0 auto 26px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 20px 40px 0 rgba(0,0,0,0.1);
+    transition: background 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:after {
+      opacity: 0;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      border-radius: 100%;
+      background: #ff5454;
+      content: '';
+      transition: opacity 0.3s ease-in-out;
+    }
+    svg {
+      @include absoluteCenter();
+      z-index: 2;
+      width: 71px;
+
+      * {
+        transition: all 0.3s ease-in-out;
+      }
+
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .choose-category {
+    padding-top: 86px;
+
+    &__content {
+      padding-top: 80px;
+      padding-bottom: 158px;
+
+      >div {
+        width: 33.333%;
+        margin: 0 0 30px;
+      }
+
+    }
+
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+
+  .choose-category {
+    padding-top: 60px;
+  }
+
+}
+@media (min-width: $desktop-hd) {
+
+  .choose-category {
+    padding-top: 86px;
+
+    &__content {
+      padding-top: 109px;
+      padding-bottom: 248px;
+    }
+
+  }
+
+}

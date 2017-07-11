@@ -1,0 +1,284 @@
+.site {
+  @include flexbox();
+  @include flex-direction(column);
+  @include justify-content(space-between);
+  @include align-items();
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  min-width: 320px;
+  min-height: 100%;
+  background: #fff;
+  @include open-sans();
+  font-weight: 300;
+  color: #2a2635;
+  font-size: 15px;
+  line-height: 24px;
+
+  &__header {
+    position: relative;
+    height: 150px;
+
+    &-layout {
+      position: relative;
+      max-width: 1200px;
+      padding: 0 15px;
+      margin: 0 auto;
+      height: 150px;
+    }
+
+    .logo {
+      @include absoluteCenterX();
+      top: 30px;
+    }
+    .btn {
+      @include absoluteCenterX();
+      top: 100px;
+      padding: 0 29px;
+      width: 90%;
+    }
+
+  }
+  &__content {
+
+  }
+  &__title {
+    margin: 0 0 9px;
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 600;
+
+    &_2 {
+      margin: 0 0 25px;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    &_3 {
+      margin: 0 0 25px;
+      font-size: 30px;
+      line-height: 36px;
+    }
+
+  }
+  &__footer {
+    padding: 50px 0 22px;
+    background: #f7f8ff;
+
+    &-layout {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    &-partners {
+      padding: 0 0 34px;
+
+      &-title {
+        margin: 0 0 56px;
+        font-size: 16px;
+        line-height: 18px;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+      }
+      &-logos {
+        @include flexbox();
+        @include flex-direction();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        @include align-items(center);
+
+        a {
+          width: 130px;
+          padding: 0 10px;
+          margin-bottom: 20px;
+          text-align: center;
+        }
+
+      }
+
+    }
+    &-info {
+      @include flexbox();
+      @include flex-direction(column);
+      @include justify-content(space-between);
+      @include align-items(center);
+      padding: 20px 0 0;
+      color: #b2b6d0;
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      text-align: center;
+
+      p {
+        margin-bottom: 15px;
+
+        a {
+          color: #ff5454;
+          transition: color 0.2s ease-in;
+
+          &:hover {
+            color: #000;
+          }
+
+        }
+        img {
+          display: inline-block;
+          vertical-align: middle;
+          margin: 0 0 0 10px;
+        }
+
+      }
+
+    }
+
+  }
+  &__kilowatt {
+    position: absolute;
+    left: 423px;
+    bottom: 148px;
+    margin-left: -20px;
+    color: #ff5555;
+    font-size: 11px;
+    line-height: 11px;
+
+    &:after {
+      position: absolute;
+      @include absoluteCenterX();
+      top: -27px;
+      width: 6px;
+      height: 6px;
+      background: #fff;
+      border-radius: 100%;
+      border: 4px solid #ff5454;
+      box-shadow: 0 0 0 6px rgba(255, 84, 84, 0.31);
+      content: '';
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .site {
+
+    &__header {
+
+      .logo {
+        @include absoluteCenterY();
+        left: 15px;
+        margin-top: -6px;
+      }
+      .btn {
+        @include absoluteCenterY();
+        left: auto;
+        right: 15px;
+        width: auto;
+      }
+
+    }
+    &__footer {
+      padding: 76px 0 22px;
+
+      &-partners {
+
+        &-logos {
+          @include flex-direction();
+          @include justify-content(space-between);
+          @include align-items(center);
+
+          a {
+            width: 22%;
+            margin-bottom: 0;
+          }
+
+        }
+
+      }
+      &-info {
+        @include flex-direction();
+        @include justify-content(space-between);
+        @include align-items(center);
+        text-align: left;
+
+        p {
+          margin-bottom: 0;
+        }
+
+      }
+      &-initiative {
+        margin: 0 102px 0 0;
+      }
+
+    }
+    &__kilowatt {
+      bottom: 178px;
+    }
+
+  }
+
+}
+@media (min-width: $tablet-landscape) {
+  .site {
+
+  }
+}
+@media (min-width: $desktop) {
+  .site {
+
+    &__kilowatt {
+      bottom: 130px;
+    }
+
+  }
+}
+@media (min-width: $desktop-hd) {
+
+  .site {
+
+    &__header {
+      height: 202px;
+
+      &-layout {
+        height: 202px;
+      }
+
+    }
+    &__kilowatt {
+      left: 21.9%;
+    }
+
+  }
+
+}
+
+@media (max-width: $tablet-portrait) {
+
+  .site {
+
+    &__footer {
+
+      &-partners {
+
+        &-logos {
+
+          a {
+
+            img {
+              width: 100%;
+              height: auto;
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}
+
