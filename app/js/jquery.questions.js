@@ -147,6 +147,10 @@
                         clearInterval( timer );
                     }
 
+                    if ( range >= 100 ){
+                        _circle.find( 'div' ).addClass( 'all' );
+                    }
+
                 }, stepTime );
 
                 _canAnimate = false;
