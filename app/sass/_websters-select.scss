@@ -4,13 +4,23 @@
   vertical-align: top;
   box-sizing: border-box;
   position: relative;
-  width: 200px;
-  height: 22px;
-  border: 1px solid $websters-select-border;
+  width: 214px;
+  height: 65px;
+  border: 2px solid rgb(242, 243, 249);
+  -webkit-transition: border-color .3s ease;
+  transition: border-color .3s ease;
+  cursor: pointer;
 
   &_opened {
+    border-color: #ff5454;
+    border-bottom: none;
 
-    .websters-select__arrow {
+    .websters-select__item {
+      height: calc( 100% - 2px );
+      color: #2a2635;
+    }
+
+    .websters-select__arrow:after {
       transform: rotate(180deg);
     }
 
@@ -21,45 +31,43 @@
     top: 0;
     right: 0;
     bottom: 0;
-    width: 20px;
+    width: 24px;
+    margin-top: -6px;
     transform-origin: center;
-    -webkit-transition: -webkit-transform 200ms ease-in-out;
-    transition: transform 200ms ease-in-out;
-
-    &:after,
-    &:before {
-      position: absolute;
-      top: 9px;
-      width: 10px;
-      height: 2px;
-      border-radius: 2px;
-      background: $websters-select-border;
-      content: '';
-    }
 
     &:after {
-      left: 4px;
-      transform: rotate(70deg);
-
+      top: 50%;
+      left: 0;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(44, 40, 55, 0);
+      border-top-color: #2c2837;
+      -webkit-transition: -webkit-transform 200ms ease-in-out;
+      transition: transform 200ms ease-in-out;
+      border-width: 5px 3px 0 4px;
     }
 
-    &:before {
-      right: 3px;
-      transform: rotate(-70deg);
-
-    }
   }
 
   &__item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
     overflow: hidden;
-    @include absoluteCenterY();
-    right: 20px;
-    left: 5px;
-    padding: 1px 5px 0;
+    letter-spacing: .3px;
+    padding: 0 35px 0 25px;
     box-sizing: border-box;
     white-space: nowrap;
     text-overflow: ellipsis;
     text-align: left;
+    color: rgba(42,38,53,.5);
+    @include open-sans;
+    font-size: 15px;
   }
 
   &_mobile {
@@ -84,30 +92,40 @@
   }
 
   &__popup {
-    overflow: hidden;
     position: absolute;
+    border: 2px solid #ff5454;
+    border-top: none;
     z-index: 10;
     box-sizing: border-box;
-    border: 1px solid $websters-select-border;
-    background: $websters-select-popup-back;
+    @include open-sans;
+    font-size: 15px;
+    background: #fff;
 
     ul {
+      position: relative;
+      top: -15px;
       z-index: 1;
     }
 
     li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: 36px;
+      padding: 0 25px;
       white-space: nowrap;
       overflow: hidden;
       cursor: pointer;
+      -webkit-transition: background-color .3s ease, color .3s ease;
+      transition: background-color .3s ease, color .3s ease;
 
       &:hover {
         color: $websters-select-popup-item-active-color;
-        background: $websters-select-popup-item-active-back;
+        background-color: #ff5454;
       }
 
       &.active {
-        color: $websters-select-popup-item-active-color !important;
-        background: $websters-select-popup-item-active-back !important;
+        display: none;
       }
 
     }

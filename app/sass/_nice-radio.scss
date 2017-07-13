@@ -1,60 +1,72 @@
 .nice-radio {
-  display: inline-block;
-  vertical-align: top;
+  display: block;
   user-select: none;
+  max-width: 770px;
+  margin: 0 auto 20px;
+  -webkit-transition: box-shadow .3s ease;
+  transition: box-shadow .3s ease;
 
   input[ type = radio ] {
     position: absolute;
     clip: rect(0, 0, 0, 0);
 
-    &:checked + label {
+    &:checked, &:hover{
 
-      &:before {
-        display: block;
+      & + span {
+        border-width: 0;
+        color: #fff;
+        box-shadow: 0 20px 40px 0 rgba(234, 67, 67, 0.25);
+
+        &:after{
+          opacity: 1;
+        }
+
       }
 
     }
 
-    &:disabled + label {
+    &:disabled + span {
       cursor: default;
       opacity: .5;
     }
 
   }
-  label {
-    position: relative;
+
+  span {
     display: flex;
-    text-align: left;
-    flex-direction: row;
+    position: relative;
     justify-content: center;
     align-items: center;
-    height: 20px;
-    padding-left: 25px;
-    color: $nice-radio-color;
+    border-radius: 3px;
+    max-width: 770px;
+    min-height: 90px;
+    margin: 0 auto;
+    padding: 7px 15px 11px;
+    border: 2px solid rgb(242, 243, 249);
+    font-size: 18px;
+    color: #2a2635;
+    letter-spacing: .3px;
     cursor: pointer;
+    text-align: center;
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
 
-    &:after,
-    &:before {
+    &:after{
       position: absolute;
-      border-radius: 50%;
-      content: '';
-    }
-
-    &:after {
       top: 0;
       left: 0;
-      width: 15px;
-      height: 15px;
-      border: 2px solid $nice-radio-after-color;
-    }
-
-    &:before {
-      display: none;
-      top: 7px;
-      left: 7px;
-      background: $nice-radio-after-color;
-      width: 5px;
-      height: 5px;
+      width: 100%;
+      height: 100%;
+      border-radius: 3px;
+      background: #ff5454;
+      opacity: 0;
+      background: -moz-linear-gradient(left, #ff5454 0%, #ff5454 42%, #ea4444 66%, #eb4343 100%);
+      background: -webkit-linear-gradient(left, #ff5454 0%,#ff5454 42%,#ea4444 66%,#eb4343 100%);
+      background: linear-gradient(to right, #ff5454 0%,#ff5454 42%,#ea4444 66%,#eb4343 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5454', endColorstr='#eb4343',GradientType=1 );
+      -webkit-transition: opacity .3s ease;
+      transition: opacity .3s ease;
+      z-index: -1;
       content: '';
     }
 

@@ -1,17 +1,12 @@
-"use strict";
 ( function(){
+
+    "use strict";
 
     window.onload = function () {
 
         new Preloader( $('.preloader') );
 
     };
-
-    $( function () {
-
-
-
-    } );
 
     var Preloader = function (obj) {
 

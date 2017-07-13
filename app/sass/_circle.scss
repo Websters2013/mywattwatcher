@@ -1,0 +1,75 @@
+.circle {
+  position: absolute;
+  top: 220px;
+  left: calc(50% - 5px);
+  width: 96px;
+  height: 95px;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s ease, visibility .3s ease;
+  transition: opacity .3s ease, visibility .3s ease;
+
+  &.show{
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-left: 3px;
+    left: calc(50% + 1px);
+    top: calc(50% + 1px);
+    width: 80px;
+    height: 80px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    border: 1px solid #f2f3f8;
+    color: #b2b6d0;
+    font-size: 18px;
+    letter-spacing: 4px;
+    z-index: 1;
+    -webkit-transition: opacity 500ms ease-in-out;
+    transition: opacity 500ms ease-in-out;
+  }
+
+  canvas{
+    position: relative;
+    z-index: 2;
+  }
+
+  &__cur-step{
+    color: #2a2635;
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+  .circle {
+    top: 175px;
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+  .circle {
+    top: 100px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .circle {
+
+  }
+}
+
+@media (min-width: $desktop-hd) {
+  .circle {
+
+  }
+}
+
