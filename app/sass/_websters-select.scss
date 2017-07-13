@@ -13,7 +13,8 @@
 
   &_opened {
     border-color: #ff5454;
-    border-bottom: none;
+    border-bottom-color: transparent;
+    border-bottom-width: 0;
 
     .websters-select__item {
       height: calc( 100% - 2px );
