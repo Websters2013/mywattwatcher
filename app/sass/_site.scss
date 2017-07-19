@@ -89,10 +89,18 @@
         @include align-items(center);
 
         a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
           width: 130px;
           padding: 0 10px;
           margin-bottom: 20px;
           text-align: center;
+        }
+
+        img{
+          display: block;
+          width: auto;
         }
 
       }
@@ -189,7 +197,8 @@
           @include align-items(center);
 
           a {
-            width: 22%;
+            //width: 22%;
+            width: auto;
             margin-bottom: 0;
           }
 
