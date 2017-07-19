@@ -1,0 +1,134 @@
+.language {
+  position: absolute;
+  top: 100px;
+  left: 14px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  color: #2a2635;
+
+  svg{
+    position: relative;
+    top: 4px;
+    width: 24px;
+    height: 18px;
+    margin-right: 5px;
+  }
+
+  &__current{
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+
+    &:after{
+      top: 6px;
+      right: -21px;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      border-color: rgba(204, 207, 214, 0);
+      border-top-color: #cccfd6;
+      border-width: 5px 4px 0 4px;
+      -webkit-transition: transform .3s ease;
+      transition: transform .3s ease;
+    }
+
+  }
+
+  &__popup{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    position: absolute;
+    top: -40px;
+    left: -10px;
+    padding: 51px 10px 8px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 12px 20px 0 rgba(42, 38, 53, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: top .3s ease, opacity .3s ease, visibility .3s ease;
+    transition: top .3s ease, opacity .3s ease, visibility .3s ease;
+  }
+
+  &__item{
+    color: #2a2635;
+    margin-bottom: 6px;
+    white-space: nowrap;
+  }
+
+  &.open{
+
+    .language__popup{
+      top: -20px;
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .language__current:after{
+      -webkit-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+
+  }
+
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .language {
+
+  }
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .language {
+
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+  .language {
+
+    &__popup{
+      left: -20px;
+      padding: 51px 20px 8px;
+    }
+
+    &__item{
+      -webkit-transition: color .3s ease;
+      transition: color .3s ease;
+
+      &:hover{
+        color: #df4141;
+      }
+
+    }
+
+    &:hover{
+
+      .language__popup{
+        top: -20px;
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .language__current:after{
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+
+    }
+
+  }
+
+}

@@ -92,7 +92,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 130px;
+          //width: 130px;
           padding: 0 10px;
           margin-bottom: 20px;
           text-align: center;
@@ -101,6 +101,7 @@
         img{
           display: block;
           width: auto;
+          max-height: 52px;
         }
 
       }
@@ -202,6 +203,10 @@
             margin-bottom: 0;
           }
 
+          img{
+            max-height: 63px;
+          }
+
         }
 
       }
@@ -231,6 +236,22 @@
 @media (min-width: $tablet-landscape) {
   .site {
 
+    &__footer {
+
+      &-partners {
+
+        &-logos {
+
+          img{
+            max-height: 100%;
+          }
+
+        }
+
+      }
+
+    }
+
   }
 }
 @media (min-width: $desktop) {
@@ -256,35 +277,6 @@
     }
     &__kilowatt {
       left: 21.9%;
-    }
-
-  }
-
-}
-
-@media (max-width: $tablet-portrait) {
-
-  .site {
-
-    &__footer {
-
-      &-partners {
-
-        &-logos {
-
-          a {
-
-            img {
-              width: 100%;
-              height: auto;
-            }
-
-          }
-
-        }
-
-      }
-
     }
 
   }
