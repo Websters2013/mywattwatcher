@@ -1,0 +1,157 @@
+{
+  "title":"Transports",
+  "questions":[
+    [
+      {
+        "option":"Nous utilisons la voiture pour tous nos transports",
+        "value":"75"
+      },
+      {
+        "option":"Nous utilisons parfois les transports publics",
+        "value":"50"
+      },
+      {
+        "option":"Nous utilisons majoritairement les transports publics",
+        "value":"35"
+      },
+      {
+        "option":"Nous utilisons majoritairement les transports publics et le vélo(moteur) pour les déplacements de proximité",
+        "value":"25"
+      }
+    ],
+    [
+      {
+        "option":"Quand nous achetons un véhicule, nous ne prêtons pas attention au taux gC0²/km",
+        "value":"30"
+      },
+      {
+        "option":"Quand nous achetons un véhicule, le taux gC0²/km est un critère secondaire",
+        "value":"25"
+      },
+      {
+        "option":"Quand nous achetons un véhicule, le taux gC0²/km fait partie des critères de sélection",
+        "value":"20"
+      },
+      {
+        "option":"Quand nous achetons un véhicule, le taux gC0²/km est le critère prioritaire",
+        "value":"15"
+      }
+    ],
+    [
+      {
+        "option":"Dans la famille, nous roulons assez nerveusement. La conduite doit être un plaisir",
+        "value":"15"
+      },
+      {
+        "option":"Dans la famille, tout le monde ne roule pas cool",
+        "value":"10"
+      },
+      {
+        "option":"Nou nous efforçons toujours de rouler cool",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous ne vérifions jamais notre consommation mensuelle de carburant",
+        "value":"4"
+      },
+      {
+        "option":"Nous examinons les notes de carburant lorsque cela nous parait anormal",
+        "value":"3"
+      },
+      {
+        "option":"Nous examinons mensuellement le relevé de nos consommations de carburant",
+        "value":"2"
+      }
+    ],
+    [
+      {
+        "option":"Je ne fais pas attention à regrouper les courses de proximité",
+        "value":"6"
+      },
+      {
+        "option":"Je prends garde à regrouper les courses de proximité",
+        "value":"3"
+      }
+    ],
+    [
+      {
+        "option":"L'entretiens de(s) véhicule(s) est  minimum. Cela coûte trop cher",
+        "value":"10"
+      },
+      {
+        "option":"Nous entretenons les véhicules suivant les prescriptions du constructeur",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nous vérifions rarement la pression des pneus",
+        "value":"10"
+      },
+      {
+        "option":"Nous vérifions la pression des pneus avant un long voyage",
+        "value":"8"
+      },
+      {
+        "option":"Nous vérifions la pression des pneus lors des entretiens",
+        "value":"5"
+      },
+      {
+        "option":"Nous vérifions la pression des pneus tous les mois",
+        "value":"3"
+      }
+    ],
+    [
+      {
+        "option":"Nous ne pratiquons pas le télétravail",
+        "value":"100"
+      },
+      {
+        "option":"Nous pratiquons occasionnellement le télétravail",
+        "value":"70"
+      },
+      {
+        "option":"Nous pratiquons essentiellement le télétravail",
+        "value":"35"
+      }
+    ],
+    [
+      {
+        "option":"Nous adorons faire des city-trips en avion. Nous le faisons au moins 4X par an",
+        "value":"10"
+      },
+      {
+        "option":"Nous aimons faire des city-trips en avion. Nous le faisons 2 à 3X par an",
+        "value":"5"
+      },
+      {
+        "option":"Nous faisons en moyenne un city-trip en avion  par an",
+        "value":"3"
+      },
+      {
+        "option":"Nous ne faisons jamais de city-trip en avion",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Nous aimons aller en vacances très loin en avion",
+        "value":"10"
+      },
+      {
+        "option":"Une année sur deux nous faisons un voyage longue distance en avion",
+        "value":"7"
+      },
+      {
+        "option":"Nous aimons partir en voiture quelque part en Europe",
+        "value":"5"
+      },
+      {
+        "option":"Nous n'allons jamais très loin en vacances",
+        "value":"2"
+      }
+    ]
+  ]
+}

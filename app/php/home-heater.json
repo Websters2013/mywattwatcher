@@ -1,0 +1,145 @@
+{
+  "title":"Installation De Chauffage",
+  "questions":[
+    [
+      {
+        "option":"Notre chaudière a plus de 15 ans",
+        "value":"90"
+      },
+      {
+        "option":"Notre chaudière est récente et performante avec sonde ext pour moduler la température d'eau chaude",
+        "value":"75"
+      },
+      {
+        "option":"Nous avons une chaudière à condensation avec sonde ext pour moduler la température d'eau chaude",
+        "value":"60"
+      },
+      {
+        "option":"Le chauffage est produit par une pompe à chaleur",
+        "value":"50"
+      }
+    ],
+    [
+      {
+        "option":"Nous attendons une panne pour faire l'entretien de la chaudière",
+        "value":"15"
+      },
+      {
+        "option":"Nous entretenons la chaudière, la pompe à chaleur, régulièrement suivant les normes",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'avons aucun appoint décentralisé pour la mi-saison",
+        "value":"25"
+      },
+      {
+        "option":"Nous avons un feu ouvert dans le living que nous utilisons en mi-saison",
+        "value":"20"
+      },
+      {
+        "option":"Nous utilisons parfois une chaufferette électrique  en mi-saison",
+        "value":"15"
+      },
+      {
+        "option":"Nous avons une cassette ('insert') au gaz naturel ou avec des pellets dans le living. Nous l'utilisons en mi-saison",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Le réseau de distribution est long et mal isolé (immeuble collectif)",
+        "value":"30"
+      },
+      {
+        "option":"Le réseau de distribution est long et bien  isolé (immeuble collectif) ou le réseau est court mais mal isolé (individuel)",
+        "value":"15"
+      },
+      {
+        "option":"Le réseau de distribution est court et bien isolé au passage dans les espaces non chauffés",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Le réseau de distribution est long et mal isolé (immeuble collectif)",
+        "value":"30"
+      },
+      {
+        "option":"Le réseau de distribution est long et bien  isolé (immeuble collectif) ou le réseau est court mais mal isolé (individuel)",
+        "value":"15"
+      },
+      {
+        "option":"Le réseau de distribution est court et bien isolé au passage dans les espaces non chauffés",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nous avons un simple thermostat que nous réglons manuellement",
+        "value":"15"
+      },
+      {
+        "option":"Nous avons un thermostat jour et nuit",
+        "value":"10"
+      },
+      {
+        "option":"Nous avons un thermostat programmable",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Les radiateurs sont équipés de vannes manuelles",
+        "value":"20"
+      },
+      {
+        "option":"Les radiateurs sont équipés de vannes thermostatiques",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Il n'y a pas d'isolant derrière les radiateurs",
+        "value":"10"
+      },
+      {
+        "option":"Des panneaux isolants ont été placés sur les murs à l'arrière des radiateurs",
+        "value":"5"
+      },
+      {
+        "option":"Des panneaux isolants et réfléchissants ont été placés sur les murs à l'arrière des radiateurs",
+        "value":"3"
+      }
+    ],
+    [
+      {
+        "option":"Nous sommes très frileux et nous réglons le thermostat à 24°C dans le living",
+        "value":"40"
+      },
+      {
+        "option":"Nous règlons le thermostat à 22°C dans le living",
+        "value":"25"
+      },
+      {
+        "option":"Nous règlons le thermostat à 20°C dans le living",
+        "value":"15"
+      },
+      {
+        "option":"Nous règlons le thermostat à 19°C dans le living",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous ne purgeons les radiateurs qu'en cas d'anomalie",
+        "value":"8"
+      },
+      {
+        "option":"Nous purgeons les radiateurs avant chaque saison de chauffe. Nous vérifions la pression d'eau en chaufferie",
+        "value":"2"
+      }
+    ]
+  ]
+}

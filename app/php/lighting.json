@@ -1,0 +1,123 @@
+{
+  "title":"Eclatrage",
+  "questions":[
+    [
+      {
+        "option":"Nous utilisons uniquement des lampes à incandescence et des lampes halogènes",
+        "value":"180"
+      },
+      {
+        "option":"Nous avons placé des tubes TL dans les lieux de travail, le garage et les caves. Nous n'avons pas de lampes éco",
+        "value":"100"
+      },
+      {
+        "option":"Nous avons placé des tubes TL dans les lieux de travail, le garage et les caves. Nous avons placé des lampes éco dans le living",
+        "value":"55"
+      },
+      {
+        "option":"Nous avons placé des tubes TL dans les lieux de travail, le garage et les caves et des lampes éco dans les locaux de séjour",
+        "value":"40"
+      }
+    ],
+    [
+      {
+        "option":"Nous utilisons des spots halogènes décoratifs dans certains locaux",
+        "value":"50"
+      },
+      {
+        "option":"Nous n'avons que quelques spots halogènes pour éclairer des points précis",
+        "value":"20"
+      },
+      {
+        "option":"Nous évitons l'utilisation de spots halogènes",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous utilisons un éclairage indirect dans la pièce de séjour",
+        "value":"50"
+      },
+      {
+        "option":"Nous évitons l'éclairage indirect",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Nous utilisons toujours un éclairage général dans tous les locaux",
+        "value":"40"
+      },
+      {
+        "option":"Nous avons doublé l'éclairage général par des points lumineux localisés ",
+        "value":"15"
+      },
+      {
+        "option":"Nous n'utilisons l'éclairage général des locaux que pour les traverser ou en cas de dîner ou de réception ",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous aimons les abat-jour tamisant la lumière diffusée par les points lumineux localisés",
+        "value":"40"
+      },
+      {
+        "option":"A l'exception de la salle de séjour, nous utilisons des abat-jour larges ou des caches translucides pour les éclairages localisés",
+        "value":"20"
+      },
+      {
+        "option":"Nus utilisons partout des abat-jour larges ou des caches translucides pour les éclairages localisés",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous utilisons les couleurs pour les parois en fonction de nos goûts et de la mode",
+        "value":"25"
+      },
+      {
+        "option":"Nous veillons à utiliser des couleurs claires pour réduire la consommation d'éclairage",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous garnissons les fenêtres de rideaux",
+        "value":"30"
+      },
+      {
+        "option":"Nous utilisons des persiennes ou louvres à certaines fenêtres",
+        "value":"20"
+      },
+      {
+        "option":"Nous n'avons pas de rideaux aux fenêtres",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nous ne sommes pas très attentifs à couper la lumière quand nous quittons un local",
+        "value":"25"
+      },
+      {
+        "option":"Nous ne sommes  très attentifs à couper la lumière quand nous quittons un local",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous ne nettoyons guère les points lumineux",
+        "value":"10"
+      },
+      {
+        "option":"Nous nettoyons sporadiquement les points lumineux",
+        "value":"7"
+      },
+      {
+        "option":"Nous nettoyons régulièrement les points lumineux",
+        "value":"5"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "title":"Gestion de l'eau",
+  "questions":[
+    [
+      {
+        "option":"Pour se laver, les membres de la famille prennent tous un bain",
+        "value":"150"
+      },
+      {
+        "option":"Pour se laver, certains prennent un bain, d'autres une douche",
+        "value":"90"
+      },
+      {
+        "option":"Pour nous laver, nous prenons tous une douche",
+        "value":"45"
+      },
+      {
+        "option":"Pour nous laver, nous prenons tous une douche avec pommeau économique",
+        "value":"35"
+      }
+    ],
+    [
+      {
+        "option":"Les toilettes sont à un seul débit",
+        "value":"40"
+      },
+      {
+        "option":"J'ai réduit le débit des toilettes en plaçant une brique dans la chasse",
+        "value":"25"
+      },
+      {
+        "option":"Toutes les toilettes sont à double débit",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Aucun robinet n'est équipé d'un ' mousseur'",
+        "value":"10"
+      },
+      {
+        "option":"Quelques robinets sont équipés d'un 'mousseur'",
+        "value":"7"
+      },
+      {
+        "option":"Tous les robinets sont équipés d'un mousseur",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Je laisse couler le robinet d'eau  quand je me lave ou me rase à l'évier ou quand je fais une petite vaisselle",
+        "value":"30"
+      },
+      {
+        "option":"Je ne laisse couler l'eau à l'évier que lorsque j'en i réellement besoin",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"J'utilise le lave-vaisselle tous les jours quel que soit son remplissage",
+        "value":"25"
+      },
+      {
+        "option":"Je n'utilise le lave-vaisselle que lorsqu'il est plein",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"J'utilise le lave-linge certains jours de chaque semaine",
+        "value":"20"
+      },
+      {
+        "option":"Je n'utilise le lave-linge que lorsqu'il est correctement rempli",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Je n'utilise pas souvent les programmes ECO du lave-linge et du lave-vaisselle",
+        "value":"25"
+      },
+      {
+        "option":"J'utilise quasi toujours les programmes ECO du lave-linge et du lave-vaisselle",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"J'utilise un séchoir à condensation toute l'année",
+        "value":"25"
+      },
+      {
+        "option":"J'utilise un séchoir à condensation uniquement en hiver",
+        "value":"15"
+      },
+      {
+        "option":"J'utilise le séchage naturel",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Je n'utilise jamais l'eau de pluie",
+        "value":"40"
+      },
+      {
+        "option":"J'ai une récupération d'eau de pluie uniquement pour l'arrosage du jardin",
+        "value":"20"
+      },
+      {
+        "option":"L'eau de pluie sert à tout sauf notre lavage et ce qui est alimentaire ",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Je ne fais pas spécialement attention aux petites fuites d'eau",
+        "value":"15"
+      },
+      {
+        "option":"J'inspecte périodiquement mes installations pour fuite éventuelle",
+        "value":"10"
+      },
+      {
+        "option":"J'inspecte mes intalations et je vérifie mon compteur périodiquement pour anomalie éventuelle de consommation",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"mes toilettes sont vétustes. Je ne vérifie pas le réglage du niveau. Les chasses coulent parfois",
+        "value":"20"
+      },
+      {
+        "option":"Dès que je constate qu'une toilette coule, je la répare immédiatement",
+        "value":"5"
+      }
+    ]
+  ]
+}

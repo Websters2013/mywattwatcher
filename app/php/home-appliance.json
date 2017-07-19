@@ -1,0 +1,99 @@
+{
+  "title":"Électroménager",
+  "questions":[
+    [
+      {
+        "option":"Nos électroménagers sont plutôt vétustes et nous attendons leur défaillance pour les remplacer",
+        "value":"90"
+      },
+      {
+        "option":"Nous achetons les appareils les moins chers pour renouveler nos appareils trop vétustes",
+        "value":"70"
+      },
+      {
+        "option":"Lorsque nous devons remplacer un appareil nous regardons son label énergétique",
+        "value":"50"
+      },
+      {
+        "option":"Lorsque nous remplaçons un appareil nous regardons par priorité son label énergétique",
+        "value":"40"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'utilisons pas souvent des petits appareils (bouilloire, micro-ondes…)",
+        "value":"25"
+      },
+      {
+        "option":"Nous utilisons souvent des petits appareils (bouilloire, micro-ondes…) pour diminuer la consomation d'électricité",
+        "value":"15"
+      }
+    ],
+    [
+      {
+        "option":"Nous utilisons les programmes qui nous semblent les mieux adaptés",
+        "value":"30"
+      },
+      {
+        "option":"Nous veillons à utiliser les programmes 'Eco'",
+        "value":"20"
+      }
+    ],
+    [
+      {
+        "option":"Nous mangeons souvent des plats surgelés",
+        "value":"15"
+      },
+      {
+        "option":"Nous mangeons parfois des plats surgelés en fonction du temps disponible",
+        "value":"10"
+      },
+      {
+        "option":"Nous évitons autant que possible de cuisiner des plats surgelés",
+        "value":"7"
+      },
+      {
+        "option":"Nous ne mangeons que des produits frais",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nousutilisons un séchoir  toute l'année",
+        "value":"40"
+      },
+      {
+        "option":"Nous utilisons un séchoir uniquement par temps humide ou froid ",
+        "value":"20"
+      },
+      {
+        "option":"Nous séchons toujours le linge naturellement (extérieur, buanderie, garage…)",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'avons pas le temps de faire attention à tous les détails pour optimiser l'usage des appareils",
+        "value":"15"
+      },
+      {
+        "option":"Nous sommes très soucieux de couvrir les casseroles à fond bien plat, nous utilisons des détergents basse température etc…",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'avons pas le temps d'entretenir convenablement les appareils",
+        "value":"20"
+      },
+      {
+        "option":"Nous nettoyons de temps en temps les appareils",
+        "value":"10"
+      },
+      {
+        "option":"Nous veillons à bien entretenir nos appareils electroménagers",
+        "value":"5"
+      }
+    ]
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "title":"Eau Chaude Sanitaire",
+  "questions":[
+    [
+      {
+        "option":"Pour se laver, les membres de la famille prennent tous un bain",
+        "value":"140"
+      },
+      {
+        "option":"Pour se laver, certains prennent un bain, d'autres une douche",
+        "value":"80"
+      },
+      {
+        "option":"Pour nous laver, nous prenons tous une douche",
+        "value":"40"
+      },
+      {
+        "option":"Pour nous laver, nous prenons tous une douche avec pommeau économique",
+        "value":"30"
+      }
+    ],
+    [
+      {
+        "option":"Aucun robinet d'eau chaude n'est équipé d'un 'mousseur'",
+        "value":"8"
+      },
+      {
+        "option":"Quelques robinets d'eau haude sont équipés d'un 'mousseur'",
+        "value":"5"
+      },
+      {
+        "option":"Tous les robinets d'eau chaudesont équipés d'un mousseur",
+        "value":"3"
+      }
+    ],
+    [
+      {
+        "option":"La production ECS est faite par un boiler électrique à accumulation de nuit",
+        "value":"75"
+      },
+      {
+        "option":"La production ECS est réalisée par la chaudière sur un ballon échangeur, ou par des chauffe-eau et chauffe-bain",
+        "value":"45"
+      },
+      {
+        "option":"La production ECS est réalisée par une chaudière à condensation mixte avec priorité pour l'eau chaude sanitaire",
+        "value":"30"
+      },
+      {
+        "option":"La production ECS est réalisée par un boiler solaire, par une pompe à chaleurou par une micro-cogénartion",
+        "value":"25"
+      }
+    ],
+    [
+      {
+        "option":"Le boiler stocke ECS à 65°C ou plus",
+        "value":"40"
+      },
+      {
+        "option":"Le ballon ECS ne dépasse pas 55°C",
+        "value":"25"
+      },
+      {
+        "option":"Le ballon ECS ne dépasse pas 50°C",
+        "value":"20"
+      },
+      {
+        "option":"La production ECS est instantannée à la demande",
+        "value":"15"
+      }
+    ],
+    [
+      {
+        "option":"La production ECS est centralisée",
+        "value":"30"
+      },
+      {
+        "option":"La production ECS est centralisée sauf pour la cuisine équipée d'un boiler électrique 5l",
+        "value":"20"
+      },
+      {
+        "option":"La production ECS est centralisée sauf pour la cuisine équipée d'un chauffe-eau gaz nat",
+        "value":"10"
+      },
+      {
+        "option":"La production ECS est faite par des chauffe-bain et chauffe eau décentralisés",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Les tuyauteries de distribution ECS ne sont pas isolées thermiquement",
+        "value":"25"
+      },
+      {
+        "option":"Quelques tuyauteries de distribution ECS sont isolées thermiquement",
+        "value":"15"
+      },
+      {
+        "option":"Toutes les tuyauteries de distribution ECS sont isolées thermiquement",
+        "value":"12"
+      },
+      {
+        "option":"La production ECS est décentralisée et les courtes tuyauteries de liaison sont isolées thermiquement",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Je ne fais pas d'entretien de l'appareil de production ECS. On se contente de dépanner en cas de problème",
+        "value":"30"
+      },
+      {
+        "option":"Je fais détartrer l'appareil de production ECS de temps en temps quand j'y pense",
+        "value":"20"
+      },
+      {
+        "option":"L'appareil de production ECS est entretenu et détartré au moins tous les 5 ans",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Je laisse couler le robinet d'eau chaude quand je me lave ou me rase à l'évier",
+        "value":"20"
+      },
+      {
+        "option":"Je ne laisse couler l'eau chaude à l'évier que lorsque j'en i réellement besoin",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Je ne coupe jamais la production ECS",
+        "value":"10"
+      },
+      {
+        "option":"Je coupe la production ECS quand nous partons n vacances",
+        "value":"4"
+      },
+      {
+        "option":"Je coupe la production ECS  si nous nous absentons pour 3 jours ou plus",
+        "value":"2"
+      }
+    ]
+  ]
+}

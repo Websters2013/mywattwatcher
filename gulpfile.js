@@ -30,6 +30,13 @@ var paths = {
                 'app/js/jquery.questions.js',
                 'app/js/jquery.websters-select.js'
             ]
+        },
+        {
+            dist: 'result.min.js',
+            contains: [
+                'app/js/jquery.main.js',
+                'app/js/jquery.result.js'
+            ]
         }
     ],
     vendorScripts: 'app/js/vendors/**/*.js',

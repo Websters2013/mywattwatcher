@@ -1,0 +1,97 @@
+{
+  "title":"Audiovisuel - informatique",
+  "questions":[
+    [
+      {
+        "option":"Nous utilisons le(s) TV en moyenne environ 100 heures/semaine (total)",
+        "value":"160"
+      },
+      {
+        "option":"Nous utilisons le(s) TV en moyenne environ 75 heures/semaine (total)",
+        "value":"120"
+      },
+      {
+        "option":"Nous utilisons le(s) TV en moyenne environ 50 heures/semaine   (total)",
+        "value":"80"
+      },
+      {
+        "option":"Nous utilisons le(s) TV en moyenne environ 25 heures/semaine   (total)",
+        "value":"40"
+      }
+    ],
+    [
+      {
+        "option":"On utilise en moyenne le(s) ordinateur(s) environ 100 heures/semaine   (total)",
+        "value":"100"
+      },
+      {
+        "option":"On utilise en moyenne le(s) ordinateur(s) environ 75 heures/semaine   (total) ",
+        "value":"75"
+      },
+      {
+        "option":"On utilise en moyenne le(s) ordinateur(s) environ 50 heures/semaine   (total)",
+        "value":"50"
+      },
+      {
+        "option":"On utilise en moyenne le(s) ordinateurs environ 25 heures/semaine   (total) ",
+        "value":"25"
+      }
+    ],
+    [
+      {
+        "option":"Nous avons une  imprimante pour l'ensemle des ordinateurs et nous la laissons donc alimentée toute la journée",
+        "value":"50"
+      },
+      {
+        "option":"Nous alimentons le(s) imprimante(s) en même temps que les ordinateurs",
+        "value":"25"
+      },
+      {
+        "option":"Nous n'alimentons le(s) imprimante(s) que lorsque nous en avons besoin",
+        "value":"15"
+      },
+      {
+        "option":"Nous n'alimentons le(s) imprimante(s) que lorsque nous en avons besoin et nous nous efforçons de regrouper les impressions",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous avons un mélange d'écrans plats et de tubescathodiques",
+        "value":"30"
+      },
+      {
+        "option":"Nous n'avons que des écrans plats",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"En cas de non utilisation, nous laissons les appareils en veille",
+        "value":"60"
+      },
+      {
+        "option":"Après usage, nous coupons l'alimentation des appareils quand nous y pensons",
+        "value":"30"
+      },
+      {
+        "option":"Nous veillons à ce que les alimentations soient coupées pour la nuit ou lorsque nous nous absentons",
+        "value":"20"
+      },
+      {
+        "option":"En cas de non utilisation de plus de deux heures, nous coupons l'alimentation des appareils",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous dépoussiérons l'arrière des appareils et les écrans de temps en temps",
+        "value":"15"
+      },
+      {
+        "option":"Nous dépoussiérons l'arrière des appareils et les écrans régulièrement",
+        "value":"5"
+      }
+    ]
+  ]
+}

@@ -12,10 +12,6 @@
     padding: 0 15px 78px;
     margin: 0 auto;
 
-    .site__title{
-      margin-bottom: 65px;
-    }
-
     &.hide{
       overflow: hidden;
       height: 0;
@@ -170,6 +166,7 @@
     top: 0;
     left: 50%;
     width: 100%;
+    padding-top: 65px;
     height: auto;
     opacity: 0;
     visibility: hidden;
@@ -197,6 +194,10 @@
     padding-top: 20px;
   }
 
+  .site__title{
+    margin-bottom: 65px;
+  }
+
 }
 
 @media (min-width: $phone-landscape) {
@@ -221,11 +222,9 @@
     &__layout,
     &__form-layout {
       padding-bottom: 158px;
-
-      .site__title{
-        margin-bottom: 105px;
-      }
-
+    }
+    &__form-layout {
+      padding-top: 141px;
     }
     &__content {
 
@@ -239,6 +238,10 @@
     &__fieldset{
       width: calc( 50% - 15px );
       text-align: left;
+    }
+
+    .site__title{
+      margin-bottom: 105px;
     }
 
   }
@@ -272,15 +275,18 @@
     &__layout,
     &__form-layout {
       padding-bottom: 248px;
+    }
 
-      .site__title{
-        margin-bottom: 116px;
-      }
-
+    &__form-layout {
+      padding-top: 151px;
     }
 
     &__content{
       padding-top: 18px;
+    }
+
+    .site__title{
+      margin-bottom: 116px;
     }
 
   }

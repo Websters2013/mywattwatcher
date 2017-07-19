@@ -1,0 +1,141 @@
+{
+  "title":"Isolation Thermique",
+  "questions":[
+    [
+      {
+        "option":"Nous ne savons pas bien la qualité de l'isolation thermique de notre habitat",
+        "value":"15"
+      },
+      {
+        "option":"Nous sommes bien informé sur l'isolation thermique de notre habitation",
+        "value":"0"
+      }
+    ],
+    [
+      {
+        "option":"Il y a des infiltrations d'air importantes par nos châssis et portes",
+        "value":"50"
+      },
+      {
+        "option":"En hiver nous mettons un 'boudin' au bas de la porte d'entrée et des portes fenêtres",
+        "value":"25"
+      },
+      {
+        "option":"Nous avons correctement étanchéisé les joints de portes et fenêtres",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Il y  a des tâches importantes d'humidité sur plusieurs murs",
+        "value":"20"
+      },
+      {
+        "option":"Nous avons quelques traces d'humidité",
+        "value":"10"
+      },
+      {
+        "option":"Les parois de notre habitat sont parfaitement secs",
+        "value":"5"
+      }
+    ],
+    [
+      {
+        "option":"Notre toiture n'est pas isolée  et n'est pas tout à fait étanche",
+        "value":"150"
+      },
+      {
+        "option":"Notre toiture n'est pas isolée mais elle est assez étanche",
+        "value":"120"
+      },
+      {
+        "option":"Nous avons quelques cms d'isolant en toiture",
+        "value":"60"
+      },
+      {
+        "option":"Nous avons plus de 10 cms d'isolant en toiture",
+        "value":"30"
+      }
+    ],
+    [
+      {
+        "option":"Nos murs extérieurs sont des murs simples",
+        "value":"100"
+      },
+      {
+        "option":"Nos murs extérieurs sont doubles avec un vide d'air entre les deux",
+        "value":"60"
+      },
+      {
+        "option":"Nous avons quelques cms d'isolant dans les murs extérieurs",
+        "value":"25"
+      },
+      {
+        "option":"Les murs extérieurs comportent une isolation  de 6 cms ou plus",
+        "value":"15"
+      }
+    ],
+    [
+      {
+        "option":"Le plancher ne comporte aucun isolant",
+        "value":"50"
+      },
+      {
+        "option":"Le plancher comporte une mince couche d'isolant",
+        "value":"20"
+      },
+      {
+        "option":"Le plancher comporte un isolant de 4 cms ou plus",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nos fenêtres sont munies de simples vitrages",
+        "value":"75"
+      },
+      {
+        "option":"Nous avons mis du double vitrage dans les pièces de séjour uniquement",
+        "value":"30"
+      },
+      {
+        "option":"Nous avons du double vitrage partout. Il date d'il y a plus de 15 ans",
+        "value":"25"
+      },
+      {
+        "option":"Nous avons installé du double vitrage superisolant à toutes nos fenêtres",
+        "value":"15"
+      }
+    ],
+    [
+      {
+        "option":"Nous laissons  parfois distraitement une porte ou une fen^tre ouverte",
+        "value":"25"
+      },
+      {
+        "option":"Nous prenons garde à ne pas laisser fenêtres ou portes ouvertes inutilement",
+        "value":"10"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'avons pas de tentures aux fenêtres sauf dans les chambres",
+        "value":"15"
+      },
+      {
+        "option":"Nous avons des tentures partout et nous veillons à bien les fermer le soir en hiver",
+        "value":"3"
+      }
+    ],
+    [
+      {
+        "option":"Nous n'avons pas de volet aux fenêtres",
+        "value":"10"
+      },
+      {
+        "option":"Nous avons des volets à toutes les fenêtres et nous les fermons le soir en hiver",
+        "value":"2"
+      }
+    ]
+  ]
+}

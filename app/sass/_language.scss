@@ -7,6 +7,7 @@
   font-weight: 600;
   letter-spacing: 2.5px;
   color: #2a2635;
+  z-index: 2;
 
   svg{
     position: relative;
@@ -98,6 +99,7 @@
 @media (min-width: $desktop) {
 
   .language {
+    top: 40px;
 
     &__popup{
       left: -20px;

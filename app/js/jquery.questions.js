@@ -17,29 +17,110 @@
             _itemCategoryBtn = _obj.find( '.choose-category__item' ),
             _layoutCategory = _obj.find( '.choose-category__layout' ),
             _categoryFormQuestions = _obj.find( '.choose-category__form' ),
+            _categoryFormUser = _categoryFormQuestions.find( 'form' ),
+            _totalSumFieldset = _categoryFormQuestions.find( '#totalSum' ),
             _circle = $( '.circle' ),
             _curStep = _circle.find( '.circle__cur-step' ),
             _numStep = _circle.find( '.circle__num-steps' ),
             _canvas = document.createElement( 'canvas' ),
             _ctx = _canvas.getContext( '2d' ),
             _number,
+            _totalValue = 0,
             _duration = 500,
             _canDraw = true,
             _canAnimate = true,
-            _currentAngle = 0;
+            _currentAngle = 0,
+            _body = $( 'html, body'),
+            _window = $( window ),
+            _request = new XMLHttpRequest();
 
         //private methods
         var _onEvent = function () {
 
                 _itemCategoryBtn.on( 'click', function () {
 
-                    var curItem = $( this );
+                    var curItem = $( this ),
+                        curItemLink = curItem.data( 'link' );
 
-                    _showQuestionForm( curItem );
+                    _ajaxRequest( curItemLink );
+
+                    _body.animate( {
+                        scrollTop: _circle.offset().top + 5
+
+                    } );
 
                     return false;
 
                 } );
+
+            },
+            _ajaxRequest = function ( link ) {
+
+                _request = $.ajax( {
+                    url: link,
+                    dataType: 'json',
+                    timeout: 20000,
+                    type: 'GET',
+                    success: function ( data ) {
+
+                        setTimeout(function () {
+
+                            _createForm( data );
+
+                        },150);
+
+                    },
+                    error: function ( XMLHttpRequest ) {
+                        if ( XMLHttpRequest.statusText != "abort" ) {
+                            console.log( 'err' );
+                        }
+                    }
+                } );
+
+            },
+            _clearLocalStorage = function () {
+                localStorage.removeItem( 'totalValue' )
+            },
+            _createForm = function ( data ) {
+
+                var categoryTitle = data.title,
+                    categoryQuestions = data.questions,
+                    categoryTitleItem = _categoryFormQuestions.find( '.site__title' ),
+                    questionItem;
+
+                categoryTitleItem.text( categoryTitle );
+
+                $.each( categoryQuestions, function() {
+
+                    var curElem = this;
+
+                    questionItem = _createItemQuestion( curElem, categoryTitle );
+
+                    questionItem.insertBefore( _categoryFormUser );
+
+                } );
+
+                _showQuestionForm();
+
+            },
+            _createItemQuestion = function ( data, title ) {
+
+                var curData = data,
+                    categoryTitle = title,
+                    questionFrame = $( '<div class="choose-category__form-layout"></div>' );
+
+                for( var i = 0; i < curData.length; i++ ){
+
+                    var curOption = curData[i].option,
+                        curValue = curData[i].value;
+
+                    questionFrame.append( '<label class="nice-radio">'+
+                        '<input type="radio" name="'+ categoryTitle +''+ i +'" id="id-'+ i +'" value="'+ curValue +'"/>'+
+                        '<span>'+ curOption +'</span></label>' );
+
+                }
+
+                return questionFrame;
 
             },
             _addCanvas = function() {
@@ -62,22 +143,19 @@
                 $( _canvas ).height( _circle.height() + 4 );
 
             },
-            _showQuestionForm = function ( elem ) {
+            _showQuestionForm = function () {
 
-                var curItem = elem,
-                    curFormId = curItem.data( 'form-id' ),
-                    curForm = _categoryFormQuestions.filter( '[data-form-id="'+ curFormId +'"]' ),
-                    itemQuestion = curForm.find( '.choose-category__form-layout' ),
+                var itemQuestion = _categoryFormQuestions.find( '.choose-category__form-layout' ),
                     itemNumber = itemQuestion.length;
 
                 _obj.css( 'height', _layoutCategory.outerHeight() );
 
                 _layoutCategory.addClass( 'hide' );
-                curForm.addClass( 'show' );
+                _categoryFormQuestions.addClass( 'show' );
 
                 _numStep.text( itemNumber );
 
-                curForm.css( 'height', itemQuestion.eq( 0 ).outerHeight() );
+                _categoryFormQuestions.css( 'height', itemQuestion.eq( 0 ).outerHeight() );
                 _obj.css( 'height', itemQuestion.eq( 0 ).outerHeight() );
                 itemQuestion.eq( 0 ).removeClass( 'hide' ).addClass( 'show' );
 
@@ -86,34 +164,49 @@
                 _loop();
                 _addCanvas();
 
-                _checkOption( itemQuestion, curForm );
+                _checkOption( itemQuestion );
 
             },
-            _checkOption = function ( elem, form ) {
+            _checkOption = function ( elem ) {
 
-                var curForm = form,
-                    curItem = elem,
+                var curItem = elem,
                     itemQuestionOption = curItem.find( 'input[ type = radio ]' );
 
                 itemQuestionOption.on( 'change', function () {
 
                     var curItem = $( this ),
+                        curValue = +( curItem.val() ),
                         curFrameParent = curItem.parents( '.choose-category__form-layout' ),
                         nextFrameParent = curFrameParent.next( '.choose-category__form-layout' ),
+                        nextFrameParentIndex = nextFrameParent.index(),
                         curFormParent = curItem.parents( '.choose-category__form' ),
                         numFormQuestion = curFormParent.find( '.choose-category__form-layout' ).length;
 
-                    _curStep.text( nextFrameParent.index() + 1 );
+                    _totalValue = + _totalValue + curValue;
 
-                    _number = ( nextFrameParent.index() + 1 ) * 100 / numFormQuestion;
+                    localStorage.setItem( 'totalValue', _totalValue );
+                    _totalSumFieldset.val( _totalValue );
+
+                    _curStep.text( nextFrameParentIndex );
+
+                    _number = ( nextFrameParentIndex ) * 100 / numFormQuestion;
 
                     _render();
 
                     curFrameParent.removeClass( 'show' );
                     nextFrameParent.addClass( 'show' );
 
-                    curForm.css( 'height', nextFrameParent.outerHeight() );
+                    _categoryFormQuestions.css( 'height', nextFrameParent.outerHeight() );
                     _obj.css( 'height', nextFrameParent.outerHeight() );
+
+                    if ( _window.outerWidth() < 768 ){
+
+                        _body.animate( {
+                            scrollTop: _circle.offset().top + 5
+
+                        } );
+
+                    }
 
                 } )
 
@@ -164,6 +257,7 @@
             },
             _construct = function () {
 
+                _clearLocalStorage();
                 _onEvent();
 
             };
