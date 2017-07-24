@@ -58,6 +58,13 @@
     color: #2a2635;
     font-weight: 400;
 
+    .svg-transparent{
+      fill: none;
+    }
+    .svg-yelow{
+      fill: #FFD41D;
+    }
+
     &:hover {
 
       .choose-category__pic {
